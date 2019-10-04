@@ -1,6 +1,6 @@
 {
   "name": "react-dark-elixir",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Dark Themed Components for Personal Projects",
   "main": "build/index.js",
   "license": "MIT",
