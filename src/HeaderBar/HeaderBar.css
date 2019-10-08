@@ -1,0 +1,22 @@
+.rde-header {
+    background-color: #00001a;
+    height: 50px;
+    padding: 1px;
+}
+
+.rde-menu{
+    font-size: 19px;
+}
+
+.rde-menu-item {
+    display: inline-block;
+    margin: 1px;
+    padding: 9px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #002e4d;
+}
+
+.rde-menu-item:hover, .active{
+    background-color: #005c99;
+}

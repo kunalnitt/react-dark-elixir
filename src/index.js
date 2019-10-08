@@ -1,10 +1,11 @@
 import React from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
+import './index.css'
+import HeaderBar from './HeaderBar/HeaderBar'
+import SideBar from './SideBar/SideBar'
 
-class Fancy extends React.Component {
-  render() {
-    return (
-      <div>This is so Fancy!</div>
-    );
-  }
+export {
+    HeaderBar,
+    SideBar
 }
-export default Fancy;
