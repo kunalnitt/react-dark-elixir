@@ -27,11 +27,13 @@
     "email": "kunal15abc@gmail.com"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.5.1"
+    "babel-preset-env": "^1.5.1",
+    "file-loader": "^4.2.0"
   }
 }

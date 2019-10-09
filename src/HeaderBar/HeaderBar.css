@@ -20,3 +20,13 @@
 .rde-menu-item:hover, .active{
     background-color: #005c99;
 }
+
+.rde-menu-icon {
+    float: left;
+    margin: 1px;
+    padding: 11px;
+}
+
+.rde-menu-icon:hover {
+    background-color: #005c99;
+}
