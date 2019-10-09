@@ -2,10 +2,12 @@
     background-color: #00001a;
     height: 50px;
     padding: 1px;
+    white-space: nowrap;
 }
 
 .rde-menu{
     font-size: 19px;
+    display: inline-block;
 }
 
 .rde-menu-item {
@@ -22,7 +24,7 @@
 }
 
 .rde-menu-icon {
-    float: left;
+    display: inline-block;
     margin: 1px;
     padding: 11px;
 }
@@ -32,9 +34,10 @@
 }
 
 .rde-user-icon {
+    display: block;
+    float: right;
     font-weight: 600;
     font-size: 17px;
-    float: right;
     margin: 1px;
     padding: 11px;
 }

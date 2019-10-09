@@ -519,10 +519,6 @@ var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(37);
 
-__webpack_require__(12);
-
-__webpack_require__(36);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var HeaderBar = function HeaderBar(props) {
@@ -551,14 +547,14 @@ var HeaderBar = function HeaderBar(props) {
           } },
         item.name
       );
-    }),
-    userIcon
+    })
   );
   return _react2.default.createElement(
     "div",
     { className: "rde-header" },
     toggleSidebarIcon,
-    menuItems
+    menuItems,
+    userIcon
   );
 };
 
@@ -614,7 +610,7 @@ var SideBar = function SideBar(props) {
           _react2.default.createElement(
             "div",
             { className: "rde-caret" },
-            _react2.default.createElement("i", { "class": "fas fa-caret-down" })
+            _react2.default.createElement("i", { className: "fas fa-caret-down" })
           )
         ),
         _react2.default.createElement(
@@ -5102,6 +5098,10 @@ __webpack_require__(10);
 
 __webpack_require__(9);
 
+__webpack_require__(12);
+
+__webpack_require__(36);
+
 __webpack_require__(11);
 
 var _HeaderBar = __webpack_require__(7);
@@ -5161,7 +5161,7 @@ exports.push([module.i, "/*!\n * Bootstrap v4.3.1 (https://getbootstrap.com/)\n 
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, ".rde-header {\n    background-color: #00001a;\n    height: 50px;\n    padding: 1px;\n}\n\n.rde-menu{\n    font-size: 19px;\n}\n\n.rde-menu-item {\n    display: inline-block;\n    margin: 1px;\n    padding: 9px;\n    font-weight: 600;\n    text-align: center;\n    background-color: #002e4d;\n}\n\n.rde-menu-item:hover, .active{\n    background-color: #005c99;\n}\n\n.rde-menu-icon {\n    float: left;\n    margin: 1px;\n    padding: 11px;\n}\n\n.rde-menu-icon:hover {\n    background-color: #005c99;\n}\n\n.rde-user-icon {\n    font-weight: 600;\n    font-size: 17px;\n    float: right;\n    margin: 1px;\n    padding: 11px;\n}", ""]);
+exports.push([module.i, ".rde-header {\n    background-color: #00001a;\n    height: 50px;\n    padding: 1px;\n    white-space: nowrap;\n}\n\n.rde-menu{\n    font-size: 19px;\n    display: inline-block;\n}\n\n.rde-menu-item {\n    display: inline-block;\n    margin: 1px;\n    padding: 9px;\n    font-weight: 600;\n    text-align: center;\n    background-color: #002e4d;\n}\n\n.rde-menu-item:hover, .active{\n    background-color: #005c99;\n}\n\n.rde-menu-icon {\n    display: inline-block;\n    margin: 1px;\n    padding: 11px;\n}\n\n.rde-menu-icon:hover {\n    background-color: #005c99;\n}\n\n.rde-user-icon {\n    display: block;\n    float: right;\n    font-weight: 600;\n    font-size: 17px;\n    margin: 1px;\n    padding: 11px;\n}", ""]);
 
 
 /***/ }),
