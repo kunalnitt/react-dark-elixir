@@ -533,6 +533,13 @@ var HeaderBar = function HeaderBar(props) {
       }, className: "rde-menu-icon" },
     _react2.default.createElement("i", { className: "fas fa-bars fa-lg" })
   ) : null;
+  var userIcon = props.user !== undefined ? _react2.default.createElement(
+    "div",
+    { className: "rde-user-icon" },
+    _react2.default.createElement("i", { className: "fas fa-user fa-lg" }),
+    "  Welcome, ",
+    props.user
+  ) : null;
   var menuItems = _react2.default.createElement(
     "div",
     { className: "rde-menu" },
@@ -544,7 +551,8 @@ var HeaderBar = function HeaderBar(props) {
           } },
         item.name
       );
-    })
+    }),
+    userIcon
   );
   return _react2.default.createElement(
     "div",
@@ -5153,7 +5161,7 @@ exports.push([module.i, "/*!\n * Bootstrap v4.3.1 (https://getbootstrap.com/)\n 
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, ".rde-header {\n    background-color: #00001a;\n    height: 50px;\n    padding: 1px;\n}\n\n.rde-menu{\n    font-size: 19px;\n}\n\n.rde-menu-item {\n    display: inline-block;\n    margin: 1px;\n    padding: 9px;\n    font-weight: 600;\n    text-align: center;\n    background-color: #002e4d;\n}\n\n.rde-menu-item:hover, .active{\n    background-color: #005c99;\n}\n\n.rde-menu-icon {\n    float: left;\n    margin: 1px;\n    padding: 11px;\n}\n\n.rde-menu-icon:hover {\n    background-color: #005c99;\n}", ""]);
+exports.push([module.i, ".rde-header {\n    background-color: #00001a;\n    height: 50px;\n    padding: 1px;\n}\n\n.rde-menu{\n    font-size: 19px;\n}\n\n.rde-menu-item {\n    display: inline-block;\n    margin: 1px;\n    padding: 9px;\n    font-weight: 600;\n    text-align: center;\n    background-color: #002e4d;\n}\n\n.rde-menu-item:hover, .active{\n    background-color: #005c99;\n}\n\n.rde-menu-icon {\n    float: left;\n    margin: 1px;\n    padding: 11px;\n}\n\n.rde-menu-icon:hover {\n    background-color: #005c99;\n}\n\n.rde-user-icon {\n    font-weight: 600;\n    font-size: 17px;\n    float: right;\n    margin: 1px;\n    padding: 11px;\n}", ""]);
 
 
 /***/ }),

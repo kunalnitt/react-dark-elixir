@@ -30,3 +30,11 @@
 .rde-menu-icon:hover {
     background-color: #005c99;
 }
+
+.rde-user-icon {
+    font-weight: 600;
+    font-size: 17px;
+    float: right;
+    margin: 1px;
+    padding: 11px;
+}
