@@ -1,0 +1,66 @@
+.rde-cards {
+    background-color: #00001a;
+    /* height: 368px; */
+    width: 300px;
+    padding: 2px;
+    margin: 1px;
+}
+
+.rde-cards-inner {
+    background-color: #002e4d;
+    padding: 3px;
+}
+
+.rde-cards-title {
+    background-color: #00001a;
+    text-align: center;
+    font-weight: 600;
+    height: 40px;
+    padding: 8px;
+}
+
+.rde-cards-image-container {
+    background-color: #00001a;
+    height: 200px;
+    margin-top: 3px;
+    padding: 2px;
+}
+
+.rde-cards-price {
+    background-color: #00001a;
+    text-align: center;
+    font-weight: 500;
+    height: 30px;
+    padding: 3px;
+    margin-top: 3px;
+}
+
+.rde-cards-description {
+    background-color: #00001a;
+    margin-top: 3px;
+}
+
+.rde-cards-description-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.rde-cards-description-body {
+    text-align: left;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 4px;
+    font-size: 15px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.rde-cards-expand-icon {
+    text-align: center;
+}
+
+.rde-cards-description:hover .rde-cards-description-body {
+    height: auto;
+    translate: all 0.4s
+}

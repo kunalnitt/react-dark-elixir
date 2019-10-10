@@ -5092,7 +5092,7 @@ if (content.locals) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.SideBar = exports.HeaderBar = undefined;
+exports.Cards = exports.SideBar = exports.HeaderBar = undefined;
 
 __webpack_require__(10);
 
@@ -5112,10 +5112,15 @@ var _SideBar = __webpack_require__(8);
 
 var _SideBar2 = _interopRequireDefault(_SideBar);
 
+var _Cards = __webpack_require__(40);
+
+var _Cards2 = _interopRequireDefault(_Cards);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.HeaderBar = _HeaderBar2.default;
 exports.SideBar = _SideBar2.default;
+exports.Cards = _Cards2.default;
 
 /***/ }),
 /* 14 */
@@ -5170,7 +5175,7 @@ exports.push([module.i, ".rde-header {\n    background-color: #00001a;\n    heig
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, ".rde-sidebar{\n    margin-top: 1px;\n    height: 100vh;\n    width: 200px;\n    background-color: #00001a;\n    transition: all 0.3s;\n}\n\n.rde-sidebar.active{\n    margin-left: -200px\n}\n\n.rde-sidebar-header {\n    height: 50px;\n    padding: 1px;\n}\n\n.rde-sidebar-menu{\n    padding: 1px;\n}\n\n.rde-sidebar-menu-item {\n    margin: 1px;\n    padding: 10px;\n    font-size: 16px;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown {\n    margin: 1px;\n    padding: 10px;\n    font-size: 16px;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown-content {\n    height: 0px;\n    overflow: hidden;\n}\n\n.rde-sidebar-menu-item:hover, .rde-sidebar-menu-item.active {\n    background-color: #005c99;\n}\n\n.rde-sidebar-menu-dropdown-item {\n    margin: 1px;\n    padding: 5px;\n    padding-left: 30px;\n    font-size: 14px;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown-item:hover, .rde-sidebar-menu-dropdown-item.active {\n    background-color: #005c99;\n}\n\n.rde-sidebar-menu-dropdown:hover ~ .rde-sidebar-menu-dropdown-content, .rde-sidebar-menu-dropdown-content:hover, .rde-sidebar-menu-dropdown-content.active {\n    height: auto;\n}\n\n.rde-caret {\n    float: right;\n    margin-right: 10px;\n}", ""]);
+exports.push([module.i, ".rde-sidebar{\n    margin-top: 1px;\n    height: 100%;\n    width: 200px;\n    background-color: #00001a;\n    transition: all 0.3s;\n}\n\n.rde-sidebar.active{\n    margin-left: -200px\n}\n\n.rde-sidebar-header {\n    height: 50px;\n    padding: 1px;\n}\n\n.rde-sidebar-menu{\n    padding: 1px;\n}\n\n.rde-sidebar-menu-item {\n    margin: 1px;\n    padding: 10px;\n    font-size: 16px;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown {\n    margin: 1px;\n    padding: 10px;\n    font-size: 16px;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown-content {\n    height: 0px;\n    overflow: hidden;\n}\n\n.rde-sidebar-menu-item:hover, .rde-sidebar-menu-item.active {\n    background-color: #005c99;\n}\n\n.rde-sidebar-menu-dropdown-item {\n    margin: 1px;\n    padding: 5px;\n    padding-left: 30px;\n    font-size: 14px;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown-item:hover, .rde-sidebar-menu-dropdown-item.active {\n    background-color: #005c99;\n}\n\n.rde-sidebar-menu-dropdown:hover ~ .rde-sidebar-menu-dropdown-content, .rde-sidebar-menu-dropdown-content:hover, .rde-sidebar-menu-dropdown-content.active {\n    height: auto;\n}\n\n.rde-caret {\n    float: right;\n    margin-right: 10px;\n}", ""]);
 
 
 /***/ }),
@@ -5179,7 +5184,7 @@ exports.push([module.i, ".rde-sidebar{\n    margin-top: 1px;\n    height: 100vh;
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, "body {\n    height: 100vh;\n    width: 100vw;\n    background-image: linear-gradient(to bottom right, #260d0d, #4c1a1a, #722727);\n    color: aliceblue\n}", ""]);
+exports.push([module.i, "body {\n    height: 100vh;\n    width: 100vw;\n    background-image: linear-gradient(to bottom right, #260d0d, #4c1a1a, #722727);\n    color: aliceblue;\n}", ""]);
 
 
 /***/ }),
@@ -19020,6 +19025,99 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (this && this.clearImmediate);
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(42);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Cards = function Cards(props) {
+    return _react2.default.createElement(
+        "div",
+        { className: "rde-cards" },
+        _react2.default.createElement(
+            "div",
+            { className: "rde-cards-inner" },
+            _react2.default.createElement(
+                "div",
+                { className: "rde-cards-title" },
+                "Item Name"
+            ),
+            _react2.default.createElement("div", { className: "rde-cards-image-container" }),
+            _react2.default.createElement(
+                "div",
+                { className: "rde-cards-price" },
+                "Price - \u20B9 10"
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "rde-cards-description" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "rde-cards-description-title" },
+                    "Product Description"
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "rde-cards-description-body" },
+                    "Detailed Description of the product is provided here. Please provide more details bla bla bla"
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "rde-cards-expand-icon" },
+                _react2.default.createElement("i", { className: "fas fa-angle-double-down fa-lg" })
+            )
+        )
+    );
+};
+
+exports.default = Cards;
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// Module
+exports.push([module.i, ".rde-cards {\n    background-color: #00001a;\n    /* height: 368px; */\n    width: 300px;\n    padding: 2px;\n    margin: 1px;\n}\n\n.rde-cards-inner {\n    background-color: #002e4d;\n    padding: 3px;\n}\n\n.rde-cards-title {\n    background-color: #00001a;\n    text-align: center;\n    font-weight: 600;\n    height: 40px;\n    padding: 8px;\n}\n\n.rde-cards-image-container {\n    background-color: #00001a;\n    height: 200px;\n    margin-top: 3px;\n    padding: 2px;\n}\n\n.rde-cards-price {\n    background-color: #00001a;\n    text-align: center;\n    font-weight: 500;\n    height: 30px;\n    padding: 3px;\n    margin-top: 3px;\n}\n\n.rde-cards-description {\n    background-color: #00001a;\n    margin-top: 3px;\n}\n\n.rde-cards-description-title {\n    text-align: center;\n    font-size: 16px;\n    font-weight: 600;\n}\n\n.rde-cards-description-body {\n    text-align: left;\n    padding-left: 6px;\n    padding-right: 6px;\n    padding-bottom: 4px;\n    font-size: 15px;\n    height: 24px;\n    overflow: hidden;\n}\n\n.rde-cards-expand-icon {\n    text-align: center;\n}\n\n.rde-cards-description:hover .rde-cards-description-body {\n    height: auto;\n    translate: all 0.4s\n}", ""]);
+
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(41);
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(1)(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
 
 /***/ })
 /******/ ]);

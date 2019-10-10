@@ -5,8 +5,10 @@ import "@fortawesome/fontawesome-free/css/all.css"
 import './index.css'
 import HeaderBar from './HeaderBar/HeaderBar'
 import SideBar from './SideBar/SideBar'
+import Cards from './Cards/Cards'
 
 export {
     HeaderBar,
-    SideBar
+    SideBar,
+    Cards
 }
