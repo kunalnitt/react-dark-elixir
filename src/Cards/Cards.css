@@ -1,6 +1,5 @@
 .rde-cards {
     background-color: #00001a;
-    /* height: 368px; */
     width: 300px;
     padding: 2px;
     margin: 1px;
@@ -21,7 +20,7 @@
 
 .rde-cards-image-container {
     background-color: #00001a;
-    height: 200px;
+    height: 150px;
     margin-top: 3px;
     padding: 2px;
 }

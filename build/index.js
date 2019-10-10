@@ -19046,41 +19046,50 @@ __webpack_require__(42);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Cards = function Cards(props) {
+    var itemName = _react2.default.createElement(
+        "div",
+        { className: "rde-cards-title" },
+        props.itemName
+    );
+    var itemImage = _react2.default.createElement("div", { className: "rde-cards-image-container" });
+    var itemPrice = _react2.default.createElement(
+        "div",
+        { className: "rde-cards-price" },
+        "Price - \u20B9 ",
+        props.itemPrice
+    );
+    var itemDetails = _react2.default.createElement(
+        "div",
+        { className: "rde-cards-description-body" },
+        props.itemDetails
+    );
     return _react2.default.createElement(
         "div",
-        { className: "rde-cards" },
+        { className: "rde-cards-container" },
         _react2.default.createElement(
             "div",
-            { className: "rde-cards-inner" },
+            { className: "rde-cards" },
             _react2.default.createElement(
                 "div",
-                { className: "rde-cards-title" },
-                "Item Name"
-            ),
-            _react2.default.createElement("div", { className: "rde-cards-image-container" }),
-            _react2.default.createElement(
-                "div",
-                { className: "rde-cards-price" },
-                "Price - \u20B9 10"
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "rde-cards-description" },
+                { className: "rde-cards-inner" },
+                itemName,
+                itemImage,
+                itemPrice,
                 _react2.default.createElement(
                     "div",
-                    { className: "rde-cards-description-title" },
-                    "Product Description"
+                    { className: "rde-cards-description" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "rde-cards-description-title" },
+                        "Product Description"
+                    ),
+                    itemDetails
                 ),
                 _react2.default.createElement(
                     "div",
-                    { className: "rde-cards-description-body" },
-                    "Detailed Description of the product is provided here. Please provide more details bla bla bla"
+                    { className: "rde-cards-expand-icon" },
+                    _react2.default.createElement("i", { className: "fas fa-angle-double-down fa-lg" })
                 )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "rde-cards-expand-icon" },
-                _react2.default.createElement("i", { className: "fas fa-angle-double-down fa-lg" })
             )
         )
     );
@@ -19094,7 +19103,7 @@ exports.default = Cards;
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, ".rde-cards {\n    background-color: #00001a;\n    /* height: 368px; */\n    width: 300px;\n    padding: 2px;\n    margin: 1px;\n}\n\n.rde-cards-inner {\n    background-color: #002e4d;\n    padding: 3px;\n}\n\n.rde-cards-title {\n    background-color: #00001a;\n    text-align: center;\n    font-weight: 600;\n    height: 40px;\n    padding: 8px;\n}\n\n.rde-cards-image-container {\n    background-color: #00001a;\n    height: 200px;\n    margin-top: 3px;\n    padding: 2px;\n}\n\n.rde-cards-price {\n    background-color: #00001a;\n    text-align: center;\n    font-weight: 500;\n    height: 30px;\n    padding: 3px;\n    margin-top: 3px;\n}\n\n.rde-cards-description {\n    background-color: #00001a;\n    margin-top: 3px;\n}\n\n.rde-cards-description-title {\n    text-align: center;\n    font-size: 16px;\n    font-weight: 600;\n}\n\n.rde-cards-description-body {\n    text-align: left;\n    padding-left: 6px;\n    padding-right: 6px;\n    padding-bottom: 4px;\n    font-size: 15px;\n    height: 24px;\n    overflow: hidden;\n}\n\n.rde-cards-expand-icon {\n    text-align: center;\n}\n\n.rde-cards-description:hover .rde-cards-description-body {\n    height: auto;\n    translate: all 0.4s\n}", ""]);
+exports.push([module.i, ".rde-cards {\n    background-color: #00001a;\n    width: 300px;\n    padding: 2px;\n    margin: 1px;\n}\n\n.rde-cards-inner {\n    background-color: #002e4d;\n    padding: 3px;\n}\n\n.rde-cards-title {\n    background-color: #00001a;\n    text-align: center;\n    font-weight: 600;\n    height: 40px;\n    padding: 8px;\n}\n\n.rde-cards-image-container {\n    background-color: #00001a;\n    height: 150px;\n    margin-top: 3px;\n    padding: 2px;\n}\n\n.rde-cards-price {\n    background-color: #00001a;\n    text-align: center;\n    font-weight: 500;\n    height: 30px;\n    padding: 3px;\n    margin-top: 3px;\n}\n\n.rde-cards-description {\n    background-color: #00001a;\n    margin-top: 3px;\n}\n\n.rde-cards-description-title {\n    text-align: center;\n    font-size: 16px;\n    font-weight: 600;\n}\n\n.rde-cards-description-body {\n    text-align: left;\n    padding-left: 6px;\n    padding-right: 6px;\n    padding-bottom: 4px;\n    font-size: 15px;\n    height: 24px;\n    overflow: hidden;\n}\n\n.rde-cards-expand-icon {\n    text-align: center;\n}\n\n.rde-cards-description:hover .rde-cards-description-body {\n    height: auto;\n    translate: all 0.4s\n}", ""]);
 
 
 /***/ }),
