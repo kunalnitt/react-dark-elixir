@@ -6,10 +6,6 @@
     transition: all 0.3s;
 }
 
-.rde-sidebar.active{
-    margin-left: -200px
-}
-
 .rde-sidebar-header {
     height: 50px;
     padding: 1px;
@@ -22,7 +18,7 @@
 .rde-sidebar-menu-item {
     margin: 1px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1.1em;
     font-weight: 600;
     text-align: left;
     background-color: #002e4d;
@@ -31,7 +27,7 @@
 .rde-sidebar-menu-dropdown {
     margin: 1px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1.1em;
     font-weight: 600;
     text-align: left;
     background-color: #002e4d;
@@ -50,7 +46,7 @@
     margin: 1px;
     padding: 5px;
     padding-left: 30px;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 600;
     text-align: left;
     background-color: #002e4d;

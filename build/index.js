@@ -536,7 +536,7 @@ var HeaderBar = function HeaderBar(props) {
     "  Welcome, ",
     props.user
   ) : null;
-  var menuItems = _react2.default.createElement(
+  var menuItems = props.items ? _react2.default.createElement(
     "div",
     { className: "rde-menu" },
     props.items.map(function (item) {
@@ -548,7 +548,7 @@ var HeaderBar = function HeaderBar(props) {
         item.name
       );
     })
-  );
+  ) : null;
   return _react2.default.createElement(
     "div",
     { className: "rde-header" },
@@ -5166,7 +5166,7 @@ exports.push([module.i, "/*!\n * Bootstrap v4.3.1 (https://getbootstrap.com/)\n 
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, ".rde-header {\n    background-color: #00001a;\n    height: 50px;\n    padding: 1px;\n    white-space: nowrap;\n}\n\n.rde-menu{\n    font-size: 19px;\n    display: inline-block;\n}\n\n.rde-menu-item {\n    display: inline-block;\n    margin: 1px;\n    padding: 9px;\n    font-weight: 600;\n    text-align: center;\n    background-color: #002e4d;\n}\n\n.rde-menu-item:hover, .active{\n    background-color: #005c99;\n}\n\n.rde-menu-icon {\n    display: inline-block;\n    margin: 1px;\n    padding: 11px;\n}\n\n.rde-menu-icon:hover {\n    background-color: #005c99;\n}\n\n.rde-user-icon {\n    display: block;\n    float: right;\n    font-weight: 600;\n    font-size: 17px;\n    margin: 1px;\n    padding: 11px;\n}", ""]);
+exports.push([module.i, ".rde-header {\n    background-color: #00001a;\n    height: 50px;\n    padding: 1px;\n    white-space: nowrap;\n}\n\n.rde-menu{\n    font-size: 1em;\n    display: inline-block;\n}\n\n.rde-menu-item {\n    display: inline-block;\n    margin: 1px;\n    padding: 9px;\n    font-weight: 600;\n    text-align: center;\n    background-color: #002e4d;\n}\n\n.rde-menu-item:hover, .active{\n    background-color: #005c99;\n}\n\n.rde-menu-icon {\n    display: inline-block;\n    margin: 1px;\n    padding: 11px;\n}\n\n.rde-menu-icon:hover {\n    background-color: #005c99;\n}\n\n.rde-user-icon {\n    display: block;\n    float: right;\n    font-weight: 600;\n    font-size: 1.1em;\n    margin: 1px;\n    padding: 11px;\n}", ""]);
 
 
 /***/ }),
@@ -5175,7 +5175,7 @@ exports.push([module.i, ".rde-header {\n    background-color: #00001a;\n    heig
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, ".rde-sidebar{\n    margin-top: 1px;\n    height: 100%;\n    width: 200px;\n    background-color: #00001a;\n    transition: all 0.3s;\n}\n\n.rde-sidebar.active{\n    margin-left: -200px\n}\n\n.rde-sidebar-header {\n    height: 50px;\n    padding: 1px;\n}\n\n.rde-sidebar-menu{\n    padding: 1px;\n}\n\n.rde-sidebar-menu-item {\n    margin: 1px;\n    padding: 10px;\n    font-size: 16px;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown {\n    margin: 1px;\n    padding: 10px;\n    font-size: 16px;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown-content {\n    height: 0px;\n    overflow: hidden;\n}\n\n.rde-sidebar-menu-item:hover, .rde-sidebar-menu-item.active {\n    background-color: #005c99;\n}\n\n.rde-sidebar-menu-dropdown-item {\n    margin: 1px;\n    padding: 5px;\n    padding-left: 30px;\n    font-size: 14px;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown-item:hover, .rde-sidebar-menu-dropdown-item.active {\n    background-color: #005c99;\n}\n\n.rde-sidebar-menu-dropdown:hover ~ .rde-sidebar-menu-dropdown-content, .rde-sidebar-menu-dropdown-content:hover, .rde-sidebar-menu-dropdown-content.active {\n    height: auto;\n}\n\n.rde-caret {\n    float: right;\n    margin-right: 10px;\n}", ""]);
+exports.push([module.i, ".rde-sidebar{\n    margin-top: 1px;\n    height: 100%;\n    width: 200px;\n    background-color: #00001a;\n    transition: all 0.3s;\n}\n\n.rde-sidebar-header {\n    height: 50px;\n    padding: 1px;\n}\n\n.rde-sidebar-menu{\n    padding: 1px;\n}\n\n.rde-sidebar-menu-item {\n    margin: 1px;\n    padding: 10px;\n    font-size: 1.1em;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown {\n    margin: 1px;\n    padding: 10px;\n    font-size: 1.1em;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown-content {\n    height: 0px;\n    overflow: hidden;\n}\n\n.rde-sidebar-menu-item:hover, .rde-sidebar-menu-item.active {\n    background-color: #005c99;\n}\n\n.rde-sidebar-menu-dropdown-item {\n    margin: 1px;\n    padding: 5px;\n    padding-left: 30px;\n    font-size: 1em;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown-item:hover, .rde-sidebar-menu-dropdown-item.active {\n    background-color: #005c99;\n}\n\n.rde-sidebar-menu-dropdown:hover ~ .rde-sidebar-menu-dropdown-content, .rde-sidebar-menu-dropdown-content:hover, .rde-sidebar-menu-dropdown-content.active {\n    height: auto;\n}\n\n.rde-caret {\n    float: right;\n    margin-right: 10px;\n}", ""]);
 
 
 /***/ }),
@@ -5184,7 +5184,7 @@ exports.push([module.i, ".rde-sidebar{\n    margin-top: 1px;\n    height: 100%;\
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, "body {\n    height: 100vh;\n    width: 100vw;\n    background-image: linear-gradient(to bottom right, #260d0d, #4c1a1a, #722727);\n    color: aliceblue;\n}", ""]);
+exports.push([module.i, "body {\n    height: 100vh;\n    width: 100vw;\n    background-image: linear-gradient(to bottom right, #260d0d, #4c1a1a, #722727);\n    color: aliceblue;\n    font-size: 100%;\n}", ""]);
 
 
 /***/ }),
@@ -19103,7 +19103,7 @@ exports.default = Cards;
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, ".rde-cards {\n    background-color: #00001a;\n    width: 300px;\n    padding: 2px;\n    margin: 1px;\n}\n\n.rde-cards-inner {\n    background-color: #002e4d;\n    padding: 3px;\n}\n\n.rde-cards-title {\n    background-color: #00001a;\n    text-align: center;\n    font-weight: 600;\n    height: 40px;\n    padding: 8px;\n}\n\n.rde-cards-image-container {\n    background-color: #00001a;\n    height: 150px;\n    margin-top: 3px;\n    padding: 2px;\n}\n\n.rde-cards-price {\n    background-color: #00001a;\n    text-align: center;\n    font-weight: 500;\n    height: 30px;\n    padding: 3px;\n    margin-top: 3px;\n}\n\n.rde-cards-description {\n    background-color: #00001a;\n    margin-top: 3px;\n}\n\n.rde-cards-description-title {\n    text-align: center;\n    font-size: 16px;\n    font-weight: 600;\n}\n\n.rde-cards-description-body {\n    text-align: left;\n    padding-left: 6px;\n    padding-right: 6px;\n    padding-bottom: 4px;\n    font-size: 15px;\n    height: 24px;\n    overflow: hidden;\n}\n\n.rde-cards-expand-icon {\n    text-align: center;\n}\n\n.rde-cards-description:hover .rde-cards-description-body {\n    height: auto;\n    translate: all 0.4s\n}", ""]);
+exports.push([module.i, ".rde-cards-container {\n    width: 200px;\n}\n\n.rde-cards {\n    background-color: #00001a;\n    padding: 2px;\n    margin: 1px;\n}\n\n.rde-cards-inner {\n    background-color: #002e4d;\n    padding: 3px;\n}\n\n.rde-cards-title {\n    background-color: #00001a;\n    text-align: center;\n    font-weight: 600;\n    height: 40px;\n    padding: 8px;\n}\n\n.rde-cards-image-container {\n    background-color: #00001a;\n    height: 150px;\n    margin-top: 3px;\n    padding: 2px;\n}\n\n.rde-cards-price {\n    background-color: #00001a;\n    text-align: center;\n    font-weight: 500;\n    height: 30px;\n    padding: 3px;\n    margin-top: 3px;\n}\n\n.rde-cards-description {\n    background-color: #00001a;\n    margin-top: 3px;\n}\n\n.rde-cards-description-title {\n    text-align: center;\n    font-weight: 600;\n    font-size: 1em;\n}\n\n.rde-cards-description-body {\n    text-align: left;\n    padding-left: 6px;\n    padding-right: 6px;\n    padding-bottom: 4px;\n    font-size: 0.9em;\n    height: 24px;\n    overflow: hidden;\n}\n\n.rde-cards-expand-icon {\n    text-align: center;\n}\n\n.rde-cards-description:hover .rde-cards-description-body {\n    height: auto;\n    translate: all 0.4s\n}", ""]);
 
 
 /***/ }),

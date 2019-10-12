@@ -3,4 +3,5 @@ body {
     width: 100vw;
     background-image: linear-gradient(to bottom right, #260d0d, #4c1a1a, #722727);
     color: aliceblue;
+    font-size: 100%;
 }

@@ -6,7 +6,7 @@
 }
 
 .rde-menu{
-    font-size: 19px;
+    font-size: 1em;
     display: inline-block;
 }
 
@@ -37,7 +37,7 @@
     display: block;
     float: right;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 1.1em;
     margin: 1px;
     padding: 11px;
 }

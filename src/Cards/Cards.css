@@ -1,6 +1,9 @@
+.rde-cards-container {
+    width: 200px;
+}
+
 .rde-cards {
     background-color: #00001a;
-    width: 300px;
     padding: 2px;
     margin: 1px;
 }
@@ -41,8 +44,8 @@
 
 .rde-cards-description-title {
     text-align: center;
-    font-size: 16px;
     font-weight: 600;
+    font-size: 1em;
 }
 
 .rde-cards-description-body {
@@ -50,7 +53,7 @@
     padding-left: 6px;
     padding-right: 6px;
     padding-bottom: 4px;
-    font-size: 15px;
+    font-size: 0.9em;
     height: 24px;
     overflow: hidden;
 }
