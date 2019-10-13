@@ -1,0 +1,31 @@
+/* .rde-searchbar-container {
+    height: 50px;
+} */
+
+.rde-searchbar {
+    background-color: #00001a;
+    margin: 1px;
+    padding: 2px;
+}
+
+.rde-searchbar-inner {
+    background-color: #002e4d;
+    padding: 3px;
+}
+
+.rde-searchbox-container {
+    background-color: #00001a;
+}
+
+.rde-searchbox {
+    font-weight: 600;
+    font-size: 1.1em;
+    height: 40px;
+    width: 100%;
+    margin: 3px;
+    padding-left: 7px;
+    color: aliceblue;
+    background-color: #00001a;
+    border-radius: 8px;
+    border:1px solid #002e4d;
+}

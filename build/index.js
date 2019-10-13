@@ -5092,7 +5092,7 @@ if (content.locals) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Cards = exports.SideBar = exports.HeaderBar = undefined;
+exports.SearchBar = exports.Cards = exports.SideBar = exports.HeaderBar = undefined;
 
 __webpack_require__(10);
 
@@ -5116,11 +5116,16 @@ var _Cards = __webpack_require__(40);
 
 var _Cards2 = _interopRequireDefault(_Cards);
 
+var _SearchBar = __webpack_require__(43);
+
+var _SearchBar2 = _interopRequireDefault(_SearchBar);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.HeaderBar = _HeaderBar2.default;
 exports.SideBar = _SideBar2.default;
 exports.Cards = _Cards2.default;
+exports.SearchBar = _SearchBar2.default;
 
 /***/ }),
 /* 14 */
@@ -5175,7 +5180,7 @@ exports.push([module.i, ".rde-header {\n    background-color: #00001a;\n    heig
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, ".rde-sidebar{\n    margin-top: 1px;\n    height: 100%;\n    width: 200px;\n    background-color: #00001a;\n    transition: all 0.3s;\n}\n\n.rde-sidebar-header {\n    height: 50px;\n    padding: 1px;\n}\n\n.rde-sidebar-menu{\n    padding: 1px;\n}\n\n.rde-sidebar-menu-item {\n    margin: 1px;\n    padding: 10px;\n    font-size: 1.1em;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown {\n    margin: 1px;\n    padding: 10px;\n    font-size: 1.1em;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown-content {\n    height: 0px;\n    overflow: hidden;\n}\n\n.rde-sidebar-menu-item:hover, .rde-sidebar-menu-item.active {\n    background-color: #005c99;\n}\n\n.rde-sidebar-menu-dropdown-item {\n    margin: 1px;\n    padding: 5px;\n    padding-left: 30px;\n    font-size: 1em;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown-item:hover, .rde-sidebar-menu-dropdown-item.active {\n    background-color: #005c99;\n}\n\n.rde-sidebar-menu-dropdown:hover ~ .rde-sidebar-menu-dropdown-content, .rde-sidebar-menu-dropdown-content:hover, .rde-sidebar-menu-dropdown-content.active {\n    height: auto;\n}\n\n.rde-caret {\n    float: right;\n    margin-right: 10px;\n}", ""]);
+exports.push([module.i, ".rde-sidebar{\n    margin-top: 1px;\n    height: 100%;\n    width: 400px;\n    background-color: #00001a;\n    transition: all 0.3s;\n}\n\n.rde-sidebar-header {\n    height: 50px;\n    padding: 1px;\n}\n\n.rde-sidebar-menu{\n    padding: 1px;\n}\n\n.rde-sidebar-menu-item {\n    margin: 1px;\n    padding: 10px;\n    font-size: 1.1em;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown {\n    margin: 1px;\n    padding: 10px;\n    font-size: 1.1em;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown-content {\n    height: 0px;\n    overflow: hidden;\n}\n\n.rde-sidebar-menu-item:hover, .rde-sidebar-menu-item.active {\n    background-color: #005c99;\n}\n\n.rde-sidebar-menu-dropdown-item {\n    margin: 1px;\n    padding: 5px;\n    padding-left: 30px;\n    font-size: 1em;\n    font-weight: 600;\n    text-align: left;\n    background-color: #002e4d;\n}\n\n.rde-sidebar-menu-dropdown-item:hover, .rde-sidebar-menu-dropdown-item.active {\n    background-color: #005c99;\n}\n\n.rde-sidebar-menu-dropdown:hover ~ .rde-sidebar-menu-dropdown-content, .rde-sidebar-menu-dropdown-content:hover, .rde-sidebar-menu-dropdown-content.active {\n    height: auto;\n}\n\n.rde-caret {\n    float: right;\n    margin-right: 10px;\n}", ""]);
 
 
 /***/ }),
@@ -19111,6 +19116,78 @@ exports.push([module.i, ".rde-cards-container {\n    width: 200px;\n}\n\n.rde-ca
 /***/ (function(module, exports, __webpack_require__) {
 
 var content = __webpack_require__(41);
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(1)(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(45);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SearchBar = function SearchBar(props) {
+    return _react2.default.createElement(
+        "div",
+        { className: "rde-searchbar-container" },
+        _react2.default.createElement(
+            "div",
+            { className: "rde-searchbar" },
+            _react2.default.createElement(
+                "div",
+                { className: "rde-searchbar-inner" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "rde-searchbox-container" },
+                    _react2.default.createElement("input", { type: "text", className: "rde-searchbox", placeholder: "Search your item here...", onChange: props.handleInputChange })
+                )
+            )
+        )
+    );
+};
+
+exports.default = SearchBar;
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// Module
+exports.push([module.i, "/* .rde-searchbar-container {\n    height: 50px;\n} */\n\n.rde-searchbar {\n    background-color: #00001a;\n    margin: 1px;\n    padding: 2px;\n}\n\n.rde-searchbar-inner {\n    background-color: #002e4d;\n    padding: 3px;\n}\n\n.rde-searchbox-container {\n    background-color: #00001a;\n}\n\n.rde-searchbox {\n    font-weight: 600;\n    font-size: 1.1em;\n    height: 40px;\n    width: 100%;\n    margin: 3px;\n    padding-left: 7px;\n    color: aliceblue;\n    background-color: #00001a;\n    border-radius: 8px;\n    border:1px solid #002e4d;\n}", ""]);
+
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(44);
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];

@@ -6,9 +6,11 @@ import './index.css'
 import HeaderBar from './HeaderBar/HeaderBar'
 import SideBar from './SideBar/SideBar'
 import Cards from './Cards/Cards'
+import SearchBar from './SearchBar/SearchBar'
 
 export {
     HeaderBar,
     SideBar,
-    Cards
+    Cards,
+    SearchBar
 }
