@@ -1,8 +1,22 @@
 .rde-header {
     background-color: #00001a;
-    height: 50px;
+    height: 70px;
     padding: 1px;
     white-space: nowrap;
+}
+
+.rde-logo-container{
+    display: inline-block;
+    overflow: hidden;
+    /* border: 7px; */
+    /* border-color: #005c99; */
+    height: 100%;
+}
+
+.rde-logo{
+    height: 100%;
+    position: relative;
+    margin-left: 10px;
 }
 
 .rde-menu{
@@ -23,10 +37,11 @@
     background-color: #005c99;
 }
 
-.rde-menu-icon {
-    display: inline-block;
+.rde-header-menu-icon {
+    display: block;
+    float: left;
     margin: 1px;
-    padding: 11px;
+    padding: 15px;
 }
 
 .rde-menu-icon:hover {
@@ -39,5 +54,5 @@
     font-weight: 600;
     font-size: 1.1em;
     margin: 1px;
-    padding: 11px;
+    padding: 17px;
 }
