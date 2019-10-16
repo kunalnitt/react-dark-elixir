@@ -1,11 +1,16 @@
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 var path = require('path');
 module.exports = {
+  mode: 'production',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
     libraryTarget: 'commonjs2' // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
   },
+  plugins:[new CopyWebpackPlugin([
+    { from: 'themes/', to: 'themes/', toType: "dir" }
+  ])],
   module: {
     rules: [
       {
