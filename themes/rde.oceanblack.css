@@ -1,0 +1,95 @@
+body {
+    /* color: #002e4d; */
+    background-image: none;
+    background-color: #3e3f3f;
+}
+
+.rde-header {
+    background-color: #232f3e;
+}
+
+.rde-menu-item {
+    background-color: #3266c7;
+}
+
+.rde-menu-item:hover, .active{
+    background-color: #0c4bc0;
+}
+
+.rde-menu-icon:hover {
+    background-color: #005c99;
+}
+
+.rde-sidebar{
+    background-color: #232f3e;
+    color: #f5f0eb;
+}
+
+.rde-sidebar-menu-item {
+    background-color: #3266c7;
+}
+
+.rde-sidebar-menu-dropdown {
+    background-color: #3266c7;
+}
+
+.rde-sidebar-menu-item:hover, .rde-sidebar-menu-item.active {
+    background-color: #0c4bc0;
+}
+
+.rde-sidebar-menu-dropdown-item {
+    background-color: #3266c7;
+}
+
+.rde-sidebar-menu-dropdown-item:hover, .rde-sidebar-menu-dropdown-item.active {
+    background-color: #0c4bc0;
+}
+
+.rde-searchbar {
+    background-color: #f5f0eb;
+}
+
+.rde-searchbar-inner {
+    background-color: #3266c7;
+}
+
+.rde-searchbar-menu-icon {
+    margin: 1px;
+    padding: 11px;
+    width: auto;
+    color: #f5f0eb;
+}
+
+.rde-searchbox-container {
+    background-color: #232f3e;
+}
+
+.rde-searchbox {
+    color: #f5f0eb;
+    background-color: #4a5664;
+}
+
+.rde-cards {
+    background-color: #232f3e;
+    color: #121416;
+}
+
+.rde-cards-inner {
+    background-color: #4a5664;
+}
+
+.rde-cards-title {
+    background-color: #3266c7;;
+}
+
+.rde-cards-image-container {
+    background-color: #638bd4;;
+}
+
+.rde-cards-price {
+    background-color: #3266c7;;
+}
+
+.rde-cards-description {
+    background-color: #3266c7;;
+}

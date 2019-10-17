@@ -1,0 +1,10 @@
+/node_modules
+webpack.config.js
+.DS_Store
+.npmignore
+.gitignore
+.nvmrc
+.babelrc
+package-lock.js
+/src
+/themes

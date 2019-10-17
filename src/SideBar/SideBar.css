@@ -4,6 +4,7 @@
     width: 400px;
     background-color: #00001a;
     transition: all 0.3s;
+    font-family: Arial,sans-serif;
 }
 
 .rde-sidebar-header {
@@ -19,7 +20,7 @@
     margin: 1px;
     padding: 10px;
     font-size: 1.1em;
-    font-weight: 600;
+    font-weight: 500;
     text-align: left;
     background-color: #002e4d;
 }
@@ -28,7 +29,7 @@
     margin: 1px;
     padding: 10px;
     font-size: 1.1em;
-    font-weight: 600;
+    font-weight: 500;
     text-align: left;
     background-color: #002e4d;
 }
@@ -47,7 +48,7 @@
     padding: 5px;
     padding-left: 30px;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 500;
     text-align: left;
     background-color: #002e4d;
 }
